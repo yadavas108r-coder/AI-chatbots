@@ -11,6 +11,7 @@ except Exception:
     TTS_AVAILABLE = False
 
 st.set_page_config(page_title="AI Chatbot", page_icon="🤖", layout="centered")
+
 st.markdown("""
     <style>
     .stApp {

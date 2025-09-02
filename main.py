@@ -11,6 +11,33 @@ except Exception:
     TTS_AVAILABLE = False
 
 st.set_page_config(page_title="AI Chatbot", page_icon="🤖", layout="centered")
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #f4f6f9;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .stChatMessage.user {
+        background: #DCF8C6;
+        color: #000;
+        padding: 12px 16px;
+        border-radius: 20px 20px 0 20px;
+        margin: 8px 0;
+    }
+    .stChatMessage.assistant {
+        background: #EDEDED;
+        color: #111;
+        padding: 12px 16px;
+        border-radius: 20px 20px 20px 0;
+        margin: 8px 0;
+    }
+    .stSidebar {
+        background-color: #222831;
+        color: white;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.title("🤖 Chatbot")
 st.caption("Made by Rahul Yadav")
 st.caption("Chat with persona, memory, downloads, and optional voice.")
